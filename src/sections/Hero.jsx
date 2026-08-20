@@ -27,7 +27,7 @@ export default function Hero() {
             <div className="space-y-1">
               <div className="relative inline-block">
                 <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-[var(--ink)] leading-[1.08] font-display">
-                  &lt;Dhruv{' '}
+                  &lt;Dhruv
                   <span className="relative inline-block text-[var(--accent)]">
                     Patel
                     <StarBurst className="absolute -top-4 -right-7 sm:-top-5 sm:-right-8 w-8 h-8 text-[var(--accent)] opacity-85" />

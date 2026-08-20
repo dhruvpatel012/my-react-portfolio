@@ -8,8 +8,8 @@ import { LuMail, LuGithub, LuLinkedin, LuCircleCheck, LuCircleAlert, LuSend } fr
 
 // Contact section with Formspree email submission and react-hook-form client validation.
 export default function Contact() {
-  // Read configured Formspree ID from environment variables with safe fallback.
-  const formspreeFormId = import.meta.env.VITE_FORMSPREE_FORM_ID || 'unconfigured'
+  // Read configured Formspree ID from environment variables with your active form ID fallback.
+  const formspreeFormId = import.meta.env.VITE_FORMSPREE_FORM_ID || 'myeglbpq'
   const [formspreeState, sendToFormspree, resetFormspree] = useFormspree(formspreeFormId)
 
   // Validate on touched so error messages only appear after user interacts with a field.
@@ -169,6 +169,7 @@ export default function Contact() {
                       }`}
                       {...register('email', {
                         required: 'Please enter a valid email.',
+                        setValueAs: (v) => (typeof v === 'string' ? v.trim() : v),
                         pattern: {
                           value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                           message: 'Please enter a valid email.'

@@ -85,7 +85,7 @@ portfolio-react/
 
 ## 📬 Connect
 
-- **Portfolio**: [dhruv-patel-portfolio](https://github.com/dhruvpatel012)
+- **Portfolio**: [dhruv-patel-portfolio](https://my-react-portfolio-fd.vercel.app/)
 - **LinkedIn**: [linkedin.com/in/dhruv-patel-012](https://linkedin.com/in/dhruv-patel-012)
 - **GitHub**: [github.com/dhruvpatel012](https://github.com/dhruvpatel012)
-- **Email**: dhruvpatel012@gmail.com
+- **Email**: [dhruvvpatel1214@gmail.com]

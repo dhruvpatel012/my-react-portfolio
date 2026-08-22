@@ -34,9 +34,9 @@ export const journeyData = [
     id: 'frontend-journey',
     period: '2025 – Present',
     year: '2025 – Present',
-    title: 'Frontend Development Journey',
-    subtitle: 'Self-Taught Developer',
-    description: 'Started my self-directed journey in frontend development, focusing on HTML, CSS, JavaScript and React to build responsive and interactive web experiences.',
+    title: 'Frontend & React Development',
+    subtitle: 'Frontend Specialization',
+    description: 'Specializing in modern frontend technologies with React, JavaScript, and Tailwind CSS. Focused on building scalable, component-driven architectures and polished user interfaces.',
     icon: LuCode,
     isCurrent: true
   }

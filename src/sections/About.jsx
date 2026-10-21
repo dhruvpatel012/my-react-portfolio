@@ -46,7 +46,7 @@ export default function About() {
 
             <div className="space-y-3.5 text-sm sm:text-base text-[var(--ink-muted)] leading-relaxed max-w-xl font-medium">
               <p>
-                I am a Computer Engineering student at LDRP Institute of Technology and Research (KSV), Gandhinagar, with a strong foundation in Full Stack development and the MERN stack.
+                I am a Computer Engineering student at LDRP Institute of Technology, Gandhinagar, with a strong foundation in Full Stack development and the MERN stack.
               </p>
               <p>
                 I enjoy building responsive web applications from the ground up—crafting intuitive user interfaces, developing and integrating REST APIs, managing database models with MongoDB, and implementing secure authentication workflows.

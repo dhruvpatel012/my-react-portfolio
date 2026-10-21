@@ -25,7 +25,7 @@ export const journeyData = [
     period: '2023 – Apr 2027 (Expected)',
     year: '2023 – 2027',
     title: 'B.E. in Computer Engineering',
-    subtitle: 'LDRP-ITR, KSV, Gandhinagar',
+    subtitle: 'LDRP-ITR, Gandhinagar',
     description: 'Pursuing B.E. in Computer Engineering. Cumulative CGPA: 7.18/10 through Semester 6. Expected graduation: April 2027.',
     icon: LuGraduationCap,
     isCurrent: true,

@@ -1,38 +1,36 @@
 import SectionHeading from '../components/SectionHeading'
 import InfoCard from '../components/InfoCard'
-import Button from '../components/Button'
-import { personalInfo } from '../data/personal'
-import { LuGraduationCap, LuCode, LuHeart, LuTarget, LuDownload } from 'react-icons/lu'
+import { LuGraduationCap, LuCode, LuHeart, LuTarget } from 'react-icons/lu'
 
 // Overview metrics highlighting core educational background and aspirations.
 const aboutCards = [
   {
     id: 'education',
     title: 'Education',
-    description: '7th Sem Computer Engineering',
+    description: 'B.E. Computer Engineering',
     icon: LuGraduationCap,
   },
   {
     id: 'focus',
     title: 'Focus',
-    description: 'Frontend & React Development',
+    description: 'Full Stack & MERN Development',
     icon: LuCode,
   },
   {
     id: 'passion',
     title: 'Passion',
-    description: 'Building solutions that help users',
+    description: 'Clean, Practical Web Solutions',
     icon: LuHeart,
   },
   {
     id: 'goal',
     title: 'Goal',
-    description: 'Growing into a Full-Stack Engineer',
+    description: 'Growing as a Full Stack Dev',
     icon: LuTarget,
   },
 ]
 
-// About section pairing personal narrative and resume download with a 2x2 fact grid.
+// About section pairing personal narrative with a 2x2 fact grid.
 export default function About() {
   return (
     <section id="about" className="py-14 sm:py-20 border-t-2 border-[var(--border-ink)]">
@@ -48,28 +46,14 @@ export default function About() {
 
             <div className="space-y-3.5 text-sm sm:text-base text-[var(--ink-muted)] leading-relaxed max-w-xl font-medium">
               <p>
-                I am currently a 7th-semester Computer Engineering student who discovered a genuine passion for frontend development. I enjoy bridging the gap between design concepts and interactive, responsive web applications.
+                I am a Computer Engineering student at LDRP Institute of Technology and Research (KSV), Gandhinagar, with a strong foundation in Full Stack development and the MERN stack.
               </p>
               <p>
-                My focus centers on React, modern JavaScript, and Tailwind CSS. Rather than relying on complicated abstractions or bloated libraries, I believe in writing readable, maintainable code and understanding how things work under the hood.
+                I enjoy building responsive web applications from the ground up—crafting intuitive user interfaces, developing and integrating REST APIs, managing database models with MongoDB, and implementing secure authentication workflows.
               </p>
               <p>
-                Every project is an opportunity to learn something new, refine my attention to detail, and build interfaces that feel engineered with purpose.
+                With experience deploying full-stack web applications to platforms like Vercel and Render, I focus on writing clean, maintainable code and engineering practical, user-focused solutions.
               </p>
-            </div>
-
-            {/* Resume button downloads PDF and opens preview in a new tab */}
-            <div className="pt-2">
-              <Button
-                variant="outline"
-                href={personalInfo.resume}
-                target="_blank"
-                rel="noopener noreferrer"
-                download="Dhruv_Patel_Resume.pdf"
-              >
-                <LuDownload className="w-4 h-4" />
-                <span>Download Resume</span>
-              </Button>
             </div>
           </div>
 

@@ -14,7 +14,7 @@ export default function Projects() {
             tag="Selected Work"
             title="Projects I've"
             highlight="built & shipped"
-            subtitle="Real-world interfaces, responsive web apps, and personal experiments."
+            subtitle="Full-stack platforms, responsive web apps, and interactive dashboards."
           />
         </div>
 

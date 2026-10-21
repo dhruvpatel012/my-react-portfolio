@@ -1,7 +1,7 @@
 import Button from '../components/Button'
 import { personalInfo } from '../data/personal'
 import { SquiggleUnderline, CurvedDownArrow, StarBurst, TapeStrip } from '../components/Doodles'
-import { LuArrowRight } from 'react-icons/lu'
+import { LuArrowRight, LuDownload } from 'react-icons/lu'
 import profileImg from '../assets/dhruv.JPG'
 
 // Hero section combining brand headline, role badge, core philosophy, and desk-style photo card.
@@ -39,7 +39,7 @@ export default function Hero() {
 
               {/* Sub-headline placed once directly beneath name to avoid repetition */}
               <h2 className="text-2xl sm:text-3xl font-extrabold text-[var(--ink-muted)] font-display tracking-tight pt-1">
-                Frontend Developer
+                Full Stack Developer
               </h2>
             </div>
 
@@ -57,12 +57,22 @@ export default function Hero() {
               I turn ideas into responsive, thoughtful web experiences with clean code, intuitive interactions, and attention to detail.
             </p>
 
-            {/* CTA action and downward guide pointing to the projects section */}
+            {/* CTA actions and downward guide pointing to the projects section */}
             <div className="pt-2 relative space-y-3">
-              <div className="flex flex-wrap items-center gap-4">
+              <div className="flex flex-wrap items-center gap-3 sm:gap-4">
                 <Button variant="primary" href="#work">
                   <span>Explore My Work</span>
                   <LuArrowRight className="w-4 h-4" />
+                </Button>
+                <Button
+                  variant="secondary"
+                  href={personalInfo.resume}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  download="Dhruv_Patel_Full_Stack_Resume.pdf"
+                >
+                  <LuDownload className="w-4 h-4" />
+                  <span>Download Resume</span>
                 </Button>
               </div>
 
@@ -109,7 +119,7 @@ export default function Hero() {
                   <div className="flex flex-wrap items-center justify-center gap-x-1.5 gap-y-0.5">
                     <span className="text-[var(--ink-muted)] uppercase tracking-wider">{personalInfo.status.label}:</span>
                     <span className="text-[var(--ink)] text-center">
-                      7th Semester Computer Engineering
+                      {personalInfo.status.value}
                     </span>
                   </div>
                 </div>

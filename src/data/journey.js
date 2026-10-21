@@ -1,43 +1,59 @@
 import { LuSchool, LuBookOpen, LuGraduationCap, LuCode } from 'react-icons/lu'
 
-// education and frontend learning milestones.
+// Academic timeline and engineering milestones matching portfolio_update_spec.md
 export const journeyData = [
   {
     id: 'secondary-education',
-    period: '2020 – 2021',
+    period: 'Jul 2020 – Jul 2021',
     year: '2020 – 2021',
     title: 'Secondary Education (10th)',
-    subtitle: 'High School Milestone',
-    description: 'Completed secondary education from GSEB with an overall score of 87.33%.',
+    subtitle: 'Nilkanth Vidhyalay, Morbi',
+    description: 'Completed 10th standard (GSHSEB) with an overall score of 87.33%.',
     icon: LuSchool,
   },
   {
     id: 'higher-secondary',
-    period: '2021 – 2023',
-    year: '2021 – 2023',
-    title: 'Higher Secondary Education (12th)',
-    subtitle: 'Science Stream',
-    description: 'Completed higher secondary education from GSEB with an overall score of 69.5% in the Science stream.',
-    icon: LuBookOpen
+    period: 'Jul 2022 – Jul 2023',
+    year: '2022 – 2023',
+    title: 'Higher Secondary (12th Science)',
+    subtitle: 'Nirmal Vidhyalay, Morbi',
+    description: 'Completed 12th standard Science stream (GSHSEB) with an overall score of 69.5%.',
+    icon: LuBookOpen,
   },
   {
     id: 'be-computer-engineering',
-    period: '2023 – Present',
-    year: '2023 – Present',
+    period: '2023 – Apr 2027 (Expected)',
+    year: '2023 – 2027',
     title: 'B.E. in Computer Engineering',
-    subtitle: 'Currently in 7th Semester',
-    description: 'Currently pursuing B.E. in Computer Engineering. Built a strong foundation in Data Structures, Algorithms, DBMS, Operating Systems, Computer Networks and Software Engineering.',
+    subtitle: 'LDRP-ITR, KSV, Gandhinagar',
+    description: 'Pursuing B.E. in Computer Engineering. Cumulative CGPA: 7.18/10 through Semester 6. Expected graduation: April 2027.',
     icon: LuGraduationCap,
-    isCurrent: true
+    isCurrent: true,
   },
   {
-    id: 'frontend-journey',
-    period: '2025 – Present',
-    year: '2025 – Present',
-    title: 'Frontend & React Development',
-    subtitle: 'Frontend Specialization',
-    description: 'Specializing in modern frontend technologies with React, JavaScript, and Tailwind CSS. Focused on building scalable, component-driven architectures and polished user interfaces.',
+    id: 'fullstack-journey',
+    period: '2024 – Present',
+    year: '2024 – Present',
+    title: 'Full Stack & MERN Development',
+    subtitle: 'Software Engineering & Web Apps',
+    description: 'Building full-stack web applications with React, Node.js, Express, FastAPI, and MongoDB. Integrating REST APIs, authentication, and cloud deployment.',
     icon: LuCode,
-    isCurrent: true
-  }
+    isCurrent: true,
+  },
+]
+
+// Professional certifications from resume
+export const certificationsData = [
+  {
+    id: 'nptel-python',
+    title: 'Python for Data Science',
+    issuer: 'NPTEL (SWAYAM), IIT Madras',
+    period: 'Jul – Aug 2025',
+  },
+  {
+    id: 'mern-stack',
+    title: 'Full Stack Development with MERN',
+    issuer: 'ThingQbator / Zikshaa / Nasscom Foundation',
+    period: 'Completed',
+  },
 ]

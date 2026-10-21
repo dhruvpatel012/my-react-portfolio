@@ -3,19 +3,20 @@ export const personalInfo = {
   name: 'Dhruv Patel',
   firstName: 'Dhruv',
   lastName: 'Patel',
-  role: 'Frontend Developer',
+  role: 'Full Stack Developer',
   tagline: "HELLO, I'M 👋",
   coreStatement: 'I build interfaces that feel engineered, not assembled.',
-  bio: '7th semester Computer Engineering student who loves creating clean, responsive and meaningful web experiences.',
+  bio: 'Final-year Computer Engineering student and Full Stack Developer with knowledge of the MERN stack and experience building responsive web applications.',
   status: {
     label: 'Currently',
-    value: '7th Semester Computer Engineering'
+    value: 'Computer Engineering Student'
   },
-  resume: '/Dhruv_Patel_Resume.pdf',
+  resume: '/Dhruv_Patel_Full_Stack_Resume.pdf',
+  resumeFileName: 'Dhruv_Patel_Full_Stack_Resume.pdf',
   social: {
     github: 'https://github.com/dhruvpatel012',
     linkedin: 'https://linkedin.com/in/dhruv-patel-012',
-    email: 'dhruvpatel012@gmail.com'
+    email: 'dhruvvpatel1214@gmail.com'
   }
 }
 

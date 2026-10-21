@@ -5,66 +5,111 @@ import {
   SiHtml5,
   SiGit,
   SiGithub,
-  SiVercel
+  SiVercel,
+  SiBootstrap,
+  SiNodedotjs,
+  SiExpress,
+  SiPostman,
+  SiVite,
+  SiFigma,
+  SiMongodb,
+  SiMongoose,
+  SiChartdotjs,
+  SiFastapi,
+  SiRender,
+  SiPython,
+  SiC,
+  SiCplusplus,
 } from 'react-icons/si'
-import { FaCss3Alt } from 'react-icons/fa6'
+import { FaCss3Alt, FaJava } from 'react-icons/fa6'
 import { TbBrandVscode } from 'react-icons/tb'
+import {
+  LuSmartphone,
+  LuLayoutGrid,
+  LuBoxes,
+  LuWorkflow,
+  LuLayers,
+  LuShieldCheck,
+  LuHardDrive,
+  LuBinary,
+  LuDatabase,
+  LuCpu,
+  LuNetwork,
+  LuServer,
+  LuCode,
+  LuFolderGit2,
+} from 'react-icons/lu'
 
-// Core technology stack and developer tools with official brand color codes.
-export const skillsData = [
+// Programming languages row from resume
+export const programmingLanguages = [
+  { id: 'js', name: 'JavaScript', icon: SiJavascript, brandColor: '#F7DF1E' },
+  { id: 'python', name: 'Python', icon: SiPython, brandColor: '#3776AB' },
+  { id: 'c', name: 'C', icon: SiC, brandColor: '#A8B9CC' },
+  { id: 'cpp', name: 'C++', icon: SiCplusplus, brandColor: '#00599C' },
+  { id: 'java', name: 'Java', icon: FaJava, brandColor: '#ED8B00' },
+]
+
+// Four organized skill groups matching portfolio_update_spec.md
+export const skillGroups = [
   {
-    id: 'react',
-    name: 'React',
-    icon: SiReact,
-    brandColor: '#61DAFB',
+    id: 'frontend',
+    title: 'Frontend',
+    icon: LuCode,
+    skills: [
+      { name: 'HTML5', icon: SiHtml5, brandColor: '#E34F26' },
+      { name: 'CSS3', icon: FaCss3Alt, brandColor: '#1572B6' },
+      { name: 'JavaScript', icon: SiJavascript, brandColor: '#F7DF1E' },
+      { name: 'React.js', icon: SiReact, brandColor: '#61DAFB' },
+      { name: 'Tailwind CSS', icon: SiTailwindcss, brandColor: '#38BDF8' },
+      { name: 'Bootstrap', icon: SiBootstrap, brandColor: '#7952B3' },
+      { name: 'Responsive Web Design', icon: LuSmartphone, brandColor: 'var(--accent)' },
+      { name: 'CSS Grid', icon: LuLayoutGrid, brandColor: '#1572B6' },
+      { name: 'Flexbox', icon: LuBoxes, brandColor: 'var(--accent)' },
+    ],
   },
   {
-    id: 'javascript',
-    name: 'JavaScript',
-    icon: SiJavascript,
-    brandColor: '#F7DF1E',
-    hasDarkChip: true,
+    id: 'backend',
+    title: 'Backend',
+    icon: LuServer,
+    skills: [
+      { name: 'Node.js', icon: SiNodedotjs, brandColor: '#5FA04E' },
+      { name: 'Express.js', icon: SiExpress, isMonochrome: true },
+      { name: 'REST APIs', icon: LuWorkflow, brandColor: 'var(--accent)' },
+      { name: 'Middleware', icon: LuLayers, brandColor: 'var(--accent)' },
+      { name: 'Authentication & Authorization', icon: LuShieldCheck, brandColor: '#10B981' },
+    ],
   },
   {
-    id: 'tailwindcss',
-    name: 'Tailwind CSS',
-    icon: SiTailwindcss,
-    brandColor: '#38BDF8',
+    id: 'tools-libraries',
+    title: 'Tools & Libraries',
+    icon: LuFolderGit2,
+    skills: [
+      { name: 'Git', icon: SiGit, brandColor: '#F05033' },
+      { name: 'GitHub', icon: SiGithub, isMonochrome: true },
+      { name: 'Postman', icon: SiPostman, brandColor: '#FF6C37' },
+      { name: 'Vite', icon: SiVite, brandColor: '#646CFF' },
+      { name: 'VS Code', icon: TbBrandVscode, brandColor: '#007ACC' },
+      { name: 'Figma', icon: SiFigma, brandColor: '#F24E1E' },
+      { name: 'MongoDB', icon: SiMongodb, brandColor: '#47A248' },
+      { name: 'Mongoose', icon: SiMongoose, brandColor: '#880000' },
+      { name: 'LocalStorage', icon: LuHardDrive, brandColor: 'var(--accent)' },
+      { name: 'Chart.js', icon: SiChartdotjs, brandColor: '#FF6384' },
+      { name: 'FastAPI', icon: SiFastapi, brandColor: '#05998B' },
+      { name: 'Vercel', icon: SiVercel, isMonochrome: true },
+      { name: 'Render', icon: SiRender, brandColor: '#46E3B7' },
+    ],
   },
   {
-    id: 'html5',
-    name: 'HTML5',
-    icon: SiHtml5,
-    brandColor: '#E34F26',
+    id: 'cs-fundamentals',
+    title: 'CS Fundamentals',
+    icon: LuCpu,
+    skills: [
+      { name: 'Data Structures & Algorithms', icon: LuBinary, brandColor: 'var(--accent)' },
+      { name: 'DBMS', icon: LuDatabase, brandColor: 'var(--accent)' },
+      { name: 'OOP', icon: LuBoxes, brandColor: 'var(--accent)' },
+      { name: 'Operating Systems', icon: LuCpu, brandColor: 'var(--accent)' },
+      { name: 'Computer Networks', icon: LuNetwork, brandColor: 'var(--accent)' },
+      { name: 'Software Engineering', icon: LuWorkflow, brandColor: 'var(--accent)' },
+    ],
   },
-  {
-    id: 'css3',
-    name: 'CSS3',
-    icon: FaCss3Alt,
-    brandColor: '#1572B6',
-  },
-  {
-    id: 'git',
-    name: 'Git',
-    icon: SiGit,
-    brandColor: '#F05033',
-  },
-  {
-    id: 'github',
-    name: 'GitHub',
-    icon: SiGithub,
-    isMonochrome: true,
-  },
-  {
-    id: 'vscode',
-    name: 'VS Code',
-    icon: TbBrandVscode,
-    brandColor: '#007ACC',
-  },
-  {
-    id: 'vercel',
-    name: 'Vercel',
-    icon: SiVercel,
-    isMonochrome: true,
-  }
 ]

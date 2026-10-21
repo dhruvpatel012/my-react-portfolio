@@ -1,5 +1,5 @@
 # Dhruv Patel — Portfolio
-Personal portfolio website of Dhruv Patel - Frontend Developer. Built with React 19, Vite, and Tailwind CSS to showcase selected web applications, technical skills, and development milestones.
+Personal portfolio website of Dhruv Patel - Full Stack Developer. Built with React 19, Vite, and Tailwind CSS to showcase selected web applications, technical skills, and development milestones.
 
 ---
 
@@ -29,8 +29,8 @@ Personal portfolio website of Dhruv Patel - Frontend Developer. Built with React
 ```text
 portfolio-react/
 ├── public/
-│   ├── Dhruv_Patel_Resume.pdf  # Downloadable resume
-│   └── favicon.svg             # Site favicon
+│   ├── Dhruv_Patel_Full_Stack_Resume.pdf  # Downloadable resume
+│   └── favicon.svg                        # Site favicon
 ├── src/
 │   ├── assets/                 # Profile images and visual assets
 │   ├── components/             # Reusable UI components (Navbar, Button, ProjectCard, etc.)

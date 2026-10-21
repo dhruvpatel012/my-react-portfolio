@@ -116,9 +116,9 @@ export default function Skills() {
             return (
               <div
                 key={skill.name}
-                className="group flex items-center gap-2.5 p-2.5 rounded-xl bg-[var(--bg-card)] border-2 border-[var(--border-ink)] shadow-[2px_2px_0_var(--border-ink)] hover:shadow-[3px_3px_0_var(--border-ink)] hover:-translate-y-0.5 transition-all duration-150 select-none min-w-0"
+                className="group flex items-center gap-2 sm:gap-2.5 p-2 sm:p-2.5 rounded-xl bg-[var(--bg-card)] border-2 border-[var(--border-ink)] shadow-[2px_2px_0_var(--border-ink)] hover:shadow-[3px_3px_0_var(--border-ink)] hover:-translate-y-0.5 transition-all duration-150 select-none min-w-0 h-auto"
               >
-                <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-[var(--bg-card-inner)] border border-[var(--border-ink)] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-[var(--bg-card-inner)] border border-[var(--border-ink)] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform self-center">
                   {SkillIcon && (
                     <SkillIcon
                       className="w-4 h-4 transition-transform shrink-0"
@@ -129,10 +129,7 @@ export default function Skills() {
                     />
                   )}
                 </div>
-                <span
-                  className="font-bold text-xs sm:text-sm text-[var(--ink)] leading-snug truncate"
-                  title={skill.name}
-                >
+                <span className="font-bold text-xs sm:text-sm text-[var(--ink)] leading-snug break-words [overflow-wrap:anywhere] min-w-0">
                   {skill.name}
                 </span>
               </div>

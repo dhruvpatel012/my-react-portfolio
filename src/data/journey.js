@@ -32,8 +32,8 @@ export const journeyData = [
   },
   {
     id: 'fullstack-journey',
-    period: '2024 – Present',
-    year: '2024 – Present',
+    period: '2026 – Present',
+    year: '2026 – Present',
     title: 'Full Stack & MERN Development',
     subtitle: 'Software Engineering & Web Apps',
     description: 'Building full-stack web applications with React, Node.js, Express, FastAPI, and MongoDB. Integrating REST APIs, authentication, and cloud deployment.',

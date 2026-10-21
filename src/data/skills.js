@@ -49,7 +49,16 @@ export const programmingLanguages = [
   { id: 'java', name: 'Java', icon: FaJava, brandColor: '#ED8B00' },
 ]
 
-// Four organized skill groups matching portfolio_update_spec.md
+// Category filters
+export const filterCategories = [
+  { id: 'all', label: 'All' },
+  { id: 'frontend', label: 'Frontend' },
+  { id: 'backend', label: 'Backend' },
+  { id: 'tools-libraries', label: 'Tools & Libraries' },
+  { id: 'cs-fundamentals', label: 'CS Fundamentals' },
+]
+
+// Four organized skill groups matching portfolio specifications exactly
 export const skillGroups = [
   {
     id: 'frontend',
@@ -113,3 +122,12 @@ export const skillGroups = [
     ],
   },
 ]
+
+// Flattened list with category metadata for filtering
+export const allSkills = skillGroups.flatMap((group) =>
+  group.skills.map((skill) => ({
+    ...skill,
+    category: group.id,
+    categoryTitle: group.title,
+  }))
+)

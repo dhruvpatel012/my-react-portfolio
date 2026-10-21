@@ -45,44 +45,6 @@ portfolio-react/
 
 ---
 
-## Getting Started
-
-### Prerequisites
-
-- [Node.js](https://nodejs.org/) (v18 or higher recommended)
-- npm or yarn
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/dhruvpatel012/portfolio-react.git
-   cd portfolio-react
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. (Optional) Set up Formspree for the contact form:
-   Create a `.env` file in the project root:
-   ```env
-   VITE_FORMSPREE_FORM_ID=your_form_id_here
-   ```
-
-4. Start the local development server:
-   ```bash
-   npm run dev
-   ```
-
-5. Build for production:
-   ```bash
-   npm run build
-   ```
-
----
-
 ## 📬 Connect
 
 - **Portfolio**: [dhruv-patel-portfolio](https://my-react-portfolio-fd.vercel.app/)

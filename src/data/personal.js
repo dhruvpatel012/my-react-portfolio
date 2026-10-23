@@ -15,7 +15,7 @@ export const personalInfo = {
   resumeFileName: 'Dhruv_Patel_Full_Stack_Resume.pdf',
   social: {
     github: 'https://github.com/dhruvpatel012',
-    linkedin: 'https://linkedin.com/in/dhruv-patel-012',
+    linkedin: 'https://www.linkedin.com/in/dhruv-patel-5149a1315/',
     email: 'dhruvvpatel1214@gmail.com'
   }
 }

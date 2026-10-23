@@ -74,7 +74,7 @@ export default function Contact() {
               <ContactLink
                 icon={LuLinkedin}
                 label="LinkedIn"
-                value="linkedin.com/in/dhruv-patel-012"
+                value="linkedin.com/in/dhruv-patel-5149a1315"
                 href={personalInfo.social.linkedin}
                 iconColor="#0A66C2"
                 isExternal={true}

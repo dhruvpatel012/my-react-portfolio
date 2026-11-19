@@ -74,16 +74,6 @@ export default function Hero() {
                     <LuEye className="w-4 h-4" />
                     <span>View Resume</span>
                   </Button>
-                  <Button
-                    variant="secondary"
-                    href={personalInfo.resume}
-                    download={personalInfo.resumeFileName}
-                    title="Download Resume (PDF)"
-                    aria-label="Download Resume (PDF)"
-                    className="!px-3.5"
-                  >
-                    <LuDownload className="w-4 h-4" />
-                  </Button>
                 </div>
               </div>
 

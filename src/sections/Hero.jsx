@@ -1,7 +1,7 @@
 import Button from '../components/Button'
 import { personalInfo } from '../data/personal'
 import { SquiggleUnderline, CurvedDownArrow, StarBurst, TapeStrip } from '../components/Doodles'
-import { LuArrowRight, LuDownload } from 'react-icons/lu'
+import { LuArrowRight, LuDownload, LuEye } from 'react-icons/lu'
 import profileImg from '../assets/dhruv.JPG'
 
 // Hero section combining brand headline, role badge, core philosophy, and desk-style photo card.
@@ -64,16 +64,27 @@ export default function Hero() {
                   <span>Explore My Work</span>
                   <LuArrowRight className="w-4 h-4" />
                 </Button>
-                <Button
-                  variant="secondary"
-                  href={personalInfo.resume}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  download="Dhruv_Patel_Full_Stack_Resume.pdf"
-                >
-                  <LuDownload className="w-4 h-4" />
-                  <span>Download Resume</span>
-                </Button>
+                <div className="inline-flex items-center gap-2">
+                  <Button
+                    variant="secondary"
+                    href={personalInfo.resume}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <LuEye className="w-4 h-4" />
+                    <span>View Resume</span>
+                  </Button>
+                  <Button
+                    variant="secondary"
+                    href={personalInfo.resume}
+                    download={personalInfo.resumeFileName}
+                    title="Download Resume (PDF)"
+                    aria-label="Download Resume (PDF)"
+                    className="!px-3.5"
+                  >
+                    <LuDownload className="w-4 h-4" />
+                  </Button>
+                </div>
               </div>
 
               {/* Sketchy curved downward arrow guiding user to explore work */}

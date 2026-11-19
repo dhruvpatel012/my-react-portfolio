@@ -11,7 +11,7 @@ export const personalInfo = {
     label: 'Currently',
     value: 'Computer Engineering Student'
   },
-  resume: '/Dhruv_Patel_Full_Stack_Resume.pdf',
+  resume: `${import.meta.env.BASE_URL}Dhruv_Patel_Full_Stack_Resume.pdf`,
   resumeFileName: 'Dhruv_Patel_Full_Stack_Resume.pdf',
   social: {
     github: 'https://github.com/dhruvpatel012',
